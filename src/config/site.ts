@@ -79,6 +79,7 @@ const site: SiteConfig = {
   footerLinks: [
     { path: '/courses/it-cert', labelKey: 'site.nav.itCert' },
     { path: '/franchise', labelKey: 'site.nav.franchise' },
+    { path: '/pricing', labelKey: 'site.nav.pricing' },
     { path: '/about', labelKey: 'site.nav.community' },
   ],
 
