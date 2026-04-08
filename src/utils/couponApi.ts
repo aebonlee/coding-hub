@@ -1,11 +1,11 @@
 import getSupabase from './supabase';
 import type { Coupon, CouponWithStats, MyCoupon } from '../types';
 
-const TABLE_COUPONS = 'exh_coupons';
-const TABLE_USES = 'exh_coupon_uses';
-const CODE_PREFIX = 'EXH';
+const TABLE_COUPONS = 'cdh_coupons';
+const TABLE_USES = 'cdh_coupon_uses';
+const CODE_PREFIX = 'CDH';
 
-/** 쿠폰 코드 자동 생성: EXH-20260408-K3M7 */
+/** 쿠폰 코드 자동 생성: CDH-20260408-K3M7 */
 export function generateCouponCode(lectureDate: string): string {
   const d = lectureDate.replace(/-/g, '');
   const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';

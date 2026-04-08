@@ -33,7 +33,7 @@ const AdminLayout = (): ReactElement => {
         <aside className={`admin-sidebar ${sidebarOpen ? 'open' : ''}`}>
           <div className="admin-sidebar-header">
             <h2>Admin</h2>
-            <p>DreamIT Exam Hub</p>
+            <p>DreamIT Coding Hub</p>
           </div>
 
           <nav className="admin-sidebar-nav">

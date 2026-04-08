@@ -26,7 +26,7 @@ export async function getComments(postId: number | string, postType: string): Pr
   const client = getSupabase();
   if (!client) return [];
   const { data, error } = await client
-    .from('exh_comments')
+    .from('cdh_comments')
     .select('*')
     .eq('post_id', Number(postId))
     .eq('post_type', postType)
@@ -45,7 +45,7 @@ export async function createComment({ postId, postType, authorId, authorName, co
   const client = getSupabase();
   if (!client) return null;
   const { data, error } = await client
-    .from('exh_comments')
+    .from('cdh_comments')
     .insert({
       post_id: Number(postId),
       post_type: postType,
@@ -70,7 +70,7 @@ export async function deleteComment(id: number): Promise<boolean> {
   const client = getSupabase();
   if (!client) return false;
   const { error } = await client
-    .from('exh_comments')
+    .from('cdh_comments')
     .delete()
     .eq('id', Number(id));
   if (error) {

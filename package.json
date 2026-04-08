@@ -1,7 +1,7 @@
 {
-  "name": "dreamitbiz-exam-hub",
-  "description": "자격증 학습사이트 허브",
-  "homepage": "https://exam-hub.dreamitbiz.com",
+  "name": "coding-hub",
+  "description": "코딩 학습사이트 허브",
+  "homepage": "https://coding-hub.dreamitbiz.com",
   "private": true,
   "version": "1.0.0",
   "type": "module",

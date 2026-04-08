@@ -1,11 +1,11 @@
 /**
- * productStorage.ts — 상품 CRUD (Supabase exh_products 테이블)
- * exam-hub 전용: exh_ 접두사 사용
+ * productStorage.ts — 상품 CRUD (Supabase cdh_products 테이블)
+ * coding-hub 전용: cdh_ 접두사 사용
  */
 import type { Product, ProductInput, ProductRow } from '../types';
 import getSupabase from './supabase';
 
-const TABLE = 'exh_products';
+const TABLE = 'cdh_products';
 
 // 템플릿: fallback 데이터 없음 (각 사이트에서 Supabase로 관리)
 const fallbackProducts: Product[] = [];
