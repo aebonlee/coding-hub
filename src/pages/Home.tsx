@@ -7,7 +7,9 @@ import site from '../config/site';
 import type { ReactElement, RefObject } from 'react';
 
 const CATEGORY_DESC_KEYS: Record<string, string> = {
-  'it-cert': 'site.home.categoryItCertDesc',
+  'web-frontend': 'site.home.categoryWebFrontendDesc',
+  'programming': 'site.home.categoryProgrammingDesc',
+  'fullstack': 'site.home.categoryFullstackDesc',
 };
 
 const Home = (): ReactElement => {
